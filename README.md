@@ -1,3 +1,3 @@
-# Projeto-DIO-recriando_pagina_inicial_da_netflix
+# Recriando a Página Inicial da Netflix
 
 ### Em andamento 🙂
