@@ -1,6 +1,9 @@
 # Recriando a Página Inicial da Netflix
 
-### Em andamento 🙂
+### FINALIZADO!!! 🙂
 
-<img src="https://cdn.discordapp.com/attachments/802946249107308604/884806075835093043/41758144-30c6-4e6a-a2b5-fc51a8977c30.png"></img>
-<img src="https://cdn.discordapp.com/attachments/802946249107308604/884806094097092608/4efe7184-1144-42da-b24b-94770a4f0b91.png"></img>
+Muito satisfeito com o resultado, por mais que eu saiba que ainda tenho muitos pontos a melhorar.
+Meu foco principal nesse projeto acredito que tenha sido o CSS, onde eu encarei desafios que tive que ter todo um cuidado para entender e colocar em prática.
+Esse projeto também marcou o início do uso do JavaScript, o que me mostra que tenho capacidade para ir fundo nessa linguagem.
+
+E que venham os próximos projetos!
