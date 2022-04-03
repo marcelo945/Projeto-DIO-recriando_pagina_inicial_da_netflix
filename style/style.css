@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    color: white;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(0, 0, 0),rgba(0, 0, 0, 0)100%), url(../img/homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    background-color: black;
+    position: relative;
+    width: auto;
+}
+
+
+/*Header*/
+
+header{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black/*rgba(17,17,17,0.85)*/;
+    height: 115px;
+    padding: 5px;
+}
+
+.container_header .container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container_header .container1 a:hover{
+    color: #e00712;
+}
+
+.container_header .container22{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1460px;
+}
+
+
+i{
+    width: 10em;
+}
+
+.menu{
+    margin-left: 30px;
+    min-width: 510px;
+}
+
+.container_header .container1 img{
+    width: 100%;
+    resize: both;
+}
+
+.container_header a{
+    margin-right: 30px;
+}
+.container2{
+    display: block;
+}
+
+
+/*Main*/
+
+.container_main{
+    display: flex;
+    flex-direction: column;
+    margin: 175px 150px 161px 150px;
+    min-width: 250px;
+    max-width: 560px;
+    min-height: 480px;
+}
+
+.container_main .container1{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_main .titulo_jogo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.container_main .titulo_jogo img{
+    max-width: 360px;
+}
+
+.container_main .jogue_agora{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_main .jogue_agora h4{
+    margin-bottom: 10px;
+}
+
+.container_main .jogue_agora .botoes{
+    display: block;
+    padding-top: 20px;
+}
+
+.botao{
+    padding: 10px 55px;
+    cursor: pointer;
+    border-color: white;
+    border-width: 0;
+    border-radius: 2px;
+    margin: 0 10px 20px 0;
+    background-color: rgb(200, 0, 0);
+}
+
+.botao:hover{
+    background-color: #e00712;
+}
+
+
+
+/*jquery*/
+
+.carousel{
+    border-top: #181818 solid 10px;
+    border-bottom: #181818 solid 10px;
+
+}
+
+.box_filme{
+    margin: 0 13px;
+    max-width: 370px;
+    display: block;
+}
+
+
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_footer a, .container_footer p{
+    color: #696c6e;
+    font-size: 12px;
+}
+
+.container_footer{
+    display: block;
+    padding: 75px 0 35px 0;
+    margin: 0 15% 0 25%;
+}
+
+.container_footer p{
+    margin-bottom: 35px;
+}
+
+.container_footer ul{
+    list-style: none;
+    list-style-position: outside;
+}
+
+.container_footer li{
+    display: inline-block;
+    width: 225px;
+}
+
+.container_footer .select{
+    margin: 35px 0 23px 0;
+}
+#lang-switcher-select{
+    width: 155px;
+    height: 55px;
+    color: #696c6e;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 1199.98px){
+    .container_main{
+        margin-bottom: 137px;
+    }
+    .container_header .container1 .menu{
+        margin-right: 0px;
+    }
+    .container_header .container1 a{
+        margin: 0px 4px 0px 4px;
+        font-size: 13px;
+    }
+    .container_footer{
+        margin: 0 0 0 25%;
+    }
+
+    .container2{
+        display: none;
+    }
+    .hamb_toggle{
+        width: 20px;
+        margin-right: 20px;
+    }
+    .one, .two, .three{
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        margin: 3px auto;
+
+        transition-duration: 0.3s;
+    }
+    
+/*fullscreen*/
+    .container2_hamb.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: black;
+        opacity: 0.95;
+
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2_hamb.on nav{
+        display: block;
+    }
+    .container2_hamb.on .hamb_toggle{
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    .container2_hamb.on .hamb_toggle .one{
+        transform: rotate(45deg) translate(-2px, 7px);
+    }
+    .container2_hamb.on .hamb_toggle .two{
+        opacity: 0;
+    }
+    .container2_hamb.on .hamb_toggle .three{
+        transform: rotate(-45deg) translate(0px, -9px);
+    }
+    .container2_hamb.on nav a{
+        text-align: center;
+        display: block;
+        transition-duration: 0.5s;
+        display: block;
+        line-height: 4rem;
+    }
+
+    .container_header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .container_header .container22{
+        width: 100%;
+    }
+
+    .container_main{
+        margin-right: 11%;
+        margin-left: 11%;
+        text-align: center;
+    }
+    .container_main .titulo_jogo img{
+        max-width: 100%;
+    }
+    .container_footer{
+        align-items: center;
+        text-align: center;
+        margin: 0 22%;
+    }
+
+
+}
+
+@media screen and (max-width: 599.98px){
+    .container_header .menu, .container_header a{
+        margin: 0 5px 0 0;
+    }
+    .container_header .container22{
+        margin-left: 15px;
+    }
+    .menu{
+        margin-left: 0px;
+        min-width: 0px;
+    }
+    .container_main{
+        margin: 190px 0 120px 0;
+        padding: 0 10% 0 25%;
+    }
+    .container_footer{
+        margin: 0 11%;
+    }
+}
